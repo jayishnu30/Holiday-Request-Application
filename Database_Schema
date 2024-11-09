@@ -1,0 +1,27 @@
++----------------+      +---------------+      +-------------------+      +--------------------+
+|    Users      |<---->|  UserRoles    |<---->|   HolidayRequests  |<---->|  RequestStatus     |
++----------------+      +---------------+      +-------------------+      +--------------------+
+| user_id (PK)  |      | role_id (PK)  |      | request_id (PK)    |      | status_id (PK)     |
+| username      |      | role_name     |      | user_id (FK)       |      | status_name        |
+| password      |      +---------------+      | start_date         |      +--------------------+
+| role_id (FK)  |                          | end_date           |
+| first_name    |                          | total_days         |
+| last_name     |                          | status_id (FK)     |
+| email         |                          | requested_at       |
+| created_at    |                          | validated_at       |
++----------------+     
+                     +-------------------+
+
+
+Relationship between the tables:
+-> Users can have one role (Employee or Validator), linking Users.role_id to UserRoles.role_id.
+-> HolidayRequests are created by Users (Employees), linking HolidayRequests.user_id to Users.user_id.
+-> HolidayRequests can have one status (Pending, Approved, Denied), linking HolidayRequests.status_id to RequestStatus.status_id.
+-> HolidayRequests will store the requested dates and calculate the total days based on the difference between the start and end dates.
+
+
+Basic Flow:
+-> An employee requests holidays by selecting Start and End Dates
+-> The request is stored in HolidayRequests Table with status as Pending
+-> A validator can login and view the pending request and can approve or deny them and updated the status in HolidayRequests Table.
+-> After the request status is updated then employee can check if request was approved or denied.
