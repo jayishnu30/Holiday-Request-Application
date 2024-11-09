@@ -41,6 +41,13 @@ Frontend (Vue): Open a browser and go to http://localhost:8081.
 Backend (PHP API): Open a browser and go to http://localhost:8082.
 MySQL Database: The database is accessible on port 3306 using the credentials in the Docker Compose file.
 
+![Screenshot 2024-11-09 at 4 05 47 PM (2)](https://github.com/user-attachments/assets/ddffe505-48b5-43bf-b678-a5a8f55fb2df)
+
+![Screenshot 2024-11-09 at 4 05 55 PM (2)](https://github.com/user-attachments/assets/2134373e-25ba-4f2d-adf4-7e4ff5bd62cf)
+![Screenshot 2024-11-09 at 4 05 59 PM (2)](https://github.com/user-attachments/assets/01642bf1-67b5-48f5-8e0f-997d84cb0308)
+
+
+
 
 
 
