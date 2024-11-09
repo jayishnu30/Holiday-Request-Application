@@ -1,0 +1,57 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #1c4e80;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #e9ecef;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .sidebar a {
+    color: #333;
+    display: block;
+    margin: 15px 0;
+    text-decoration: none;
+  }
+  
+  .main-content {
+    margin-left: 220px;
+    padding: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+  }
+  
+  .popover {
+    border: 1px solid #ddd;
+    background: white;
+    padding: 10px;
+    position: absolute;
+    width: 200px;
+    border-radius: 5px;
+  }
+  
